@@ -1,0 +1,16 @@
+{
+    "name": "ScriptingAssembly.Editor",
+    "rootNamespace": "ScriptingAssembly.Editor",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "Editor"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
