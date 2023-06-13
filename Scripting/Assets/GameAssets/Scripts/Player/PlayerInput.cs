@@ -1,7 +1,7 @@
 using UniRx;
 using UnityEngine;
 
-namespace Scripting.Player
+namespace Scripting
 {
     public class PlayerInput : MonoBehaviour
     {

@@ -25,6 +25,8 @@ namespace Scripting
 
             PlayerPrefs.SetInt(BEST_SCORE, collected);
             BestScore.Value = collected;
+            
+            PlayerPrefs.Save();
         }
     }
 }

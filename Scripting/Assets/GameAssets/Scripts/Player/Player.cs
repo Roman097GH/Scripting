@@ -1,14 +1,14 @@
 using UniRx;
 using UnityEngine;
 
-namespace Scripting.Player
+namespace Scripting
 {
     [RequireComponent(typeof(PlayerInput))]
     [RequireComponent(typeof(CharacterController))]
     public class Player : MonoBehaviour, IPlayer
     {
-        [SerializeField, HideInInspector] private PlayerInput _playerInput;
         [SerializeField, HideInInspector] private CharacterController _characterController;
+        [SerializeField, HideInInspector] private PlayerInput _playerInput;
         [SerializeField] private float _speed = 5.0f;
         private Vector3 _movement;
 
@@ -32,5 +32,7 @@ namespace Scripting.Player
         {
             _movement = Vector3.ClampMagnitude(moveVector, 1.0f) * Time.deltaTime * _speed;
         }
+
+        public Vector3 GetCurrentPosition() => transform.position;
     }
 }

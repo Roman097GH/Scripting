@@ -10,9 +10,10 @@ namespace Scripting
         public override void InstallBindings()
         {
             Container.BindInterfacesTo<GamePanel>().FromInstance(_gamePanelObject);
-            Container.Bind<GameStateService>().AsSingle();
+            Container.BindInterfacesAndSelfTo<GameStateService>().AsSingle();
             Container.Bind<CollectableManager>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
             Container.Bind<ILocalization>().To<UnityLocalization>().AsSingle().NonLazy();
+            Container.Bind<EnemyFactoryService>().AsSingle();
         }
     }
 }
