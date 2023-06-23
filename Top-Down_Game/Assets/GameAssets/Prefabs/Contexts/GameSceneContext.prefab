@@ -78,5 +78,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
-  _playerMoveObject: {fileID: 0}
+  playerObject: {fileID: 0}
   _gamePanelObject: {fileID: 0}
